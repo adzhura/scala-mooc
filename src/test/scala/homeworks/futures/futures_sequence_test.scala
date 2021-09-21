@@ -39,7 +39,7 @@ class futures_sequence_test extends AnyFlatSpec {
       * satisfied answer will process task with any number of runnable
       * choose which one you want
       * */
-    val limit = 100
+    val limit = 9
 
     implicit val exec: ExecutionContext = limitedExec(limit)
     val fut1 = fut(1)
@@ -57,7 +57,7 @@ class futures_sequence_test extends AnyFlatSpec {
      * choose which one you want
      * */
 
-    val limit = 100
+    val limit = 7
 
     implicit val exec: ExecutionContext = limitedExec(limit)
     val ex1 = new Exception("ex1")
@@ -76,7 +76,7 @@ class futures_sequence_test extends AnyFlatSpec {
      * choose which one you want
      * */
 
-    val limit = 100
+    val limit = 4
 
     implicit val exec: ExecutionContext = limitedExec(limit)
     val ex1 = new Exception("ex1")
